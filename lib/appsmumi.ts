@@ -36,7 +36,7 @@ export const KELOMPOK_DESA_MAP: Record<string, string> = {
 }
 
 export const KELOMPOK_OPTIONS = Object.keys(KELOMPOK_DESA_MAP)
-export const DESA_OPTIONS = [...new Set(Object.values(KELOMPOK_DESA_MAP))]
+export const DESA_OPTIONS = Array.from(new Set(Object.values(KELOMPOK_DESA_MAP)))
 
 // Utility functions
 export const calculateAge = (birthDate: string): number => {
